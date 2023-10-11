@@ -1,5 +1,5 @@
 let coinFlip;
-const numFlips = parseInt(prompt("How many times do you want to flip the coin?"));
+let numFlips = parseInt(prompt("How many times do you want to flip the coin?"));
 for (let i = 0; i < numFlips; i++) {
   coinFlip = Math.round(Math.random());
   if (coinFlip === 0) {
