@@ -1,9 +1,10 @@
 let coinFlip;
-do {
-  coinFlip = Math.floor(Math.random() * 2); // Generates a random number 0 or 1
+const numFlips = parseInt(prompt("How many times do you want to flip the coin?"));
+for (let i = 0; i < numFlips; i++) {
+  coinFlip = Math.round(Math.random());
   if (coinFlip === 0) {
     console.log("Heads");
-  } else if (coinFlip === 1) {
+  } else {
     console.log("Tails");
   }
-} while (coinFlip !== 1); // Continue until coinFlip becomes "Tails"
+}
